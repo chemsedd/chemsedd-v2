@@ -1,32 +1,28 @@
 <template>
-  <header class="col-start-3 col-end-11 py-12">
-    <div
-      class="flex justify-space justify-start gap-x-3 text-white text-lg font-semibold"
-    >
-      <div class="grid grid-cols-1 font-extrabold">
-        <a href="#">
-          Home
-          <div class="bg-redish mt-1 w-10 h-1"></div>
-        </a>
-      </div>
-      <div class="grid grid-cols-1">
-        <a href="#">
-          Work
-          <div class="bg-redish mt-1 w-10 h-1 hidden"></div>
-        </a>
-      </div>
-      <div class="grid grid-cols-1">
-        <a href="#">
-          Contact
-          <div class="bg-redish mt-1 w-10 h-1 hidden"></div>
-        </a>
-      </div>
-      <div class="grid grid-cols-1">
-        <a href="#">
-          About!
-          <div class="bg-redish mt-1 w-10 h-1 hidden"></div>
-        </a>
-      </div>
+  <header class="col-start-3 col-end-7 flex text-white text-lg font-semibold">
+    <div class="flex-1 grid font-extrabold">
+      <a href="#">
+        Home
+        <div class="bg-redish-500 mt-1 w-10 h-1"></div>
+      </a>
+    </div>
+    <div class="flex-1 grid">
+      <a href="#">
+        Work
+        <div class="bg-redish-500 mt-1 w-10 h-1 hidden"></div>
+      </a>
+    </div>
+    <div class="flex-1 grid">
+      <a href="#">
+        Contact
+        <div class="bg-redish-500 mt-1 w-10 h-1 hidden"></div>
+      </a>
+    </div>
+    <div class="flex-1 grid">
+      <a href="#">
+        About!
+        <div class="bg-redish-500 mt-1 w-10 h-1 hidden"></div>
+      </a>
     </div>
   </header>
 </template>

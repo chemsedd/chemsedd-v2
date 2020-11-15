@@ -1,26 +1,44 @@
 <template>
-  <div id="app" class="flex w-screen h-screen">
-    <div class="flex-1 grid grid-cols-12">
+  <div id="app" class="w-screen h-screen">
+    <div class="grid grid-cols-12 justify-center py-8 px-8">
       <nav-bar />
-      <main class="relative flex-1 col-start-3 col-end-11 grid grid-cols-6">
-        <div class="col-span-4">
-          <h1 class="text-4xl text-white fira-code font-extrabold">
-            Mr.Chems Eddine Senoussi
-          </h1>
-          <h5 class="text-lg text-white fira-code font-thin">
-            // <span class="bg-redish px-2">Web Developer</span> &
-            <span class="bg-blue-600 px-2">Graphic Designer</span>
-          </h5>
+    </div>
+    <div class="flex-1 grid grid-cols-12 items-center pt-48 px-8">
+      <div class="relative flex-1 col-start-3 col-end-11 grid grid-cols-12">
+        <div class="col-span-8 grid grid-cols-1">
+          <div>
+            <h1 class="text-4xl text-white fira-code font-extrabold">
+              Mr.Chems Eddine Senoussi
+            </h1>
+            <h5 class="text-lg text-white fira-code font-thin">
+              // <span class="font-bold px-2">Web Developer</span> &
+              <span class="font-bold px-2">Graphic Designer</span>
+            </h5>
+          </div>
+          <div class="grid gap-3 grid-cols-8 p-4 text-white">
+            <button
+              class="h-10 col-span-3 bg-redish-500 hover:bg-redish-700 font-bold"
+            >
+              Resume
+            </button>
+            <button
+              class="h-10 col-span-3 border border-gray-200 hover:bg-redish-700 hover:bg-opacity-25 font-bold"
+            >
+              Contact
+            </button>
+          </div>
         </div>
-        <div
-          id="white-square"
-          class="absolute col-span-2 h-56 w-56 bg-gray-100 shadow-lg"
-        ></div>
-        <div
-          id="red-square"
-          class="absolute col-span-2 h-56 w-56 bg-redish shadow-lg"
-        ></div>
-      </main>
+        <div class="col-span-4 relative">
+          <div
+            id="white-square"
+            class="absolute h-56 w-56 bg-gray-100 shadow-lg"
+          ></div>
+          <div
+            id="red-square"
+            class="absolute h-56 w-56 bg-redish-500 hover:bg-redish-700 shadow-lg"
+          ></div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -36,7 +54,7 @@ export default {
 </script>
 
 <style>
-body {
+#app {
   @apply bg-dark;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.01) 2px,
@@ -59,11 +77,12 @@ nav {
 }
 
 #white-square {
+  top: 0px;
   right: 0px;
-  bottom: 150px;
 }
 
 #red-square {
-  right: 100px;
+  top: 50px;
+  right: 90px;
 }
 </style>
