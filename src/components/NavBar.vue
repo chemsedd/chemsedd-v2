@@ -1,5 +1,7 @@
 <template>
-  <header class="col-start-3 col-end-7 flex text-white text-lg font-semibold">
+  <header
+    class="md:col-start-3 md:col-end-7 flex text-white text-lg font-semibold"
+  >
     <div class="flex-1 grid font-extrabold">
       <a href="#">
         Home
@@ -33,5 +35,9 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped>
+nav {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+</style>
