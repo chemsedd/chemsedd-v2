@@ -3,6 +3,7 @@
     class="mb-48 w-2/3 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 text-white fira-code"
   >
     <li
+      data-aos="fade-up"
       v-for="(desc, skill) in skills"
       :key="skill"
       :class="skill != 0 ? 'mt-8' : ''"
@@ -45,6 +46,7 @@ export default {
   name: "Skills",
   data() {
     return {
+      animations: [],
       skills: {
         "Web Development":
           "lorem picsum lorem picsum lorem picsum lorem picsum lorem picsum lorem picsum lorem picsum ",
