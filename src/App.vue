@@ -32,7 +32,7 @@ export default {
 
 <style>
 body {
-  @apply bg-dark;
+  @apply bg-gray-900;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.01) 2px,
       transparent 2px

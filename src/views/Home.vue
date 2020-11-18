@@ -1,6 +1,9 @@
 <template>
   <div class="flex-1 grid grid-cols-12 py-40 h-full">
-    <div class="col-start-3 col-span-5 flex flex-col flex-1 gap-y-3">
+    <div
+      data-aos="fade-right"
+      class="col-start-3 col-span-5 flex flex-col flex-1 gap-y-3"
+    >
       <div class="text-4xl text-white fira-code font-extrabold">
         Mr.Chems Eddine Senoussi
         <div class="bg-redish-500 w-2/12 h-2"></div>
@@ -23,32 +26,42 @@
       </div>
     </div>
     <div class="col-start-8 col-span-3 grid grid-cols-1">
-      <div class="relative">
-        <div
-          id="white-square"
-          class="absolute h-56 w-56 bg-gray-100 hover:bg-gray-300 shadow-lg"
-        ></div>
-        <div
-          id="red-square"
-          class="absolute h-56 w-56 bg-redish-500 hover:bg-redish-700 shadow-lg"
-        ></div>
-        <div id="six-dots-1" class="absolute grid grid-cols-3 gap-4">
-          <div class="bg-white rounded-full w-4 h-4"></div>
-          <div class="bg-white rounded-full w-4 h-4"></div>
-          <div class="bg-redish-500 rounded-full w-4 h-4"></div>
-          <div class="bg-white rounded-full w-4 h-4"></div>
-          <div class="bg-white rounded-full w-4 h-4"></div>
-          <div class="bg-redish-500 rounded-full w-4 h-4"></div>
+      <kinesis-container>
+        <div class="relative">
+          <kinesis-element :strength="10">
+            <div
+              id="white-square"
+              class="absolute h-56 w-56 bg-gray-100 shadow-lg"
+            ></div>
+          </kinesis-element>
+          <kinesis-element :strength="10">
+            <div
+              id="red-square"
+              class="absolute h-56 w-56 bg-redish-500 shadow-lg"
+            ></div>
+          </kinesis-element>
+          <kinesis-element :strength="10">
+            <div id="six-dots-1" class="absolute grid grid-cols-3 gap-4">
+              <div class="bg-white rounded-full w-4 h-4"></div>
+              <div class="bg-white rounded-full w-4 h-4"></div>
+              <div class="bg-redish-500 rounded-full w-4 h-4"></div>
+              <div class="bg-white rounded-full w-4 h-4"></div>
+              <div class="bg-white rounded-full w-4 h-4"></div>
+              <div class="bg-redish-500 rounded-full w-4 h-4"></div>
+            </div>
+          </kinesis-element>
+          <kinesis-element :strength="10">
+            <div id="six-dots-2" class="absolute grid grid-cols-3 gap-4">
+              <div class="bg-white rounded-full w-4 h-4"></div>
+              <div class="bg-white rounded-full w-4 h-4"></div>
+              <div class="bg-redish-500 rounded-full w-4 h-4"></div>
+              <div class="bg-white rounded-full w-4 h-4"></div>
+              <div class="bg-white rounded-full w-4 h-4"></div>
+              <div class="bg-redish-500 rounded-full w-4 h-4"></div>
+            </div>
+          </kinesis-element>
         </div>
-        <div id="six-dots-2" class="absolute grid grid-cols-3 gap-4">
-          <div class="bg-white rounded-full w-4 h-4"></div>
-          <div class="bg-white rounded-full w-4 h-4"></div>
-          <div class="bg-redish-500 rounded-full w-4 h-4"></div>
-          <div class="bg-white rounded-full w-4 h-4"></div>
-          <div class="bg-white rounded-full w-4 h-4"></div>
-          <div class="bg-redish-500 rounded-full w-4 h-4"></div>
-        </div>
-      </div>
+      </kinesis-container>
     </div>
   </div>
 </template>
