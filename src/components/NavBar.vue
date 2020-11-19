@@ -3,26 +3,32 @@
     class="md:col-start-3 md:col-end-7 flex text-white text-lg font-semibold"
   >
     <div class="flex-1 grid font-extrabold">
-      <a href="#">
+      <a href="#home">
         Home
         <div class="bg-redish-500 mt-1 w-10 h-1"></div>
       </a>
     </div>
     <div class="flex-1 grid">
-      <a href="#">
+      <a href="#about">
+        About
+        <div class="bg-redish-500 mt-1 w-10 h-1 hidden"></div>
+      </a>
+    </div>
+    <div class="flex-1 grid">
+      <a href="#skills">
+        Skills
+        <div class="bg-redish-500 mt-1 w-10 h-1 hidden"></div>
+      </a>
+    </div>
+    <div class="flex-1 grid">
+      <a href="#work">
         Work
         <div class="bg-redish-500 mt-1 w-10 h-1 hidden"></div>
       </a>
     </div>
     <div class="flex-1 grid">
-      <a href="#">
+      <a href="#contact">
         Contact
-        <div class="bg-redish-500 mt-1 w-10 h-1 hidden"></div>
-      </a>
-    </div>
-    <div class="flex-1 grid">
-      <a href="#">
-        About!
         <div class="bg-redish-500 mt-1 w-10 h-1 hidden"></div>
       </a>
     </div>

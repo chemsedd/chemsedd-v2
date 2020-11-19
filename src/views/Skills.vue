@@ -1,44 +1,44 @@
 <template>
-  <ul
-    class="mb-48 w-2/3 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 text-white fira-code"
+  <div
+    class="h-screen flex flex-col gap-y-16 items-center justify-center text-white"
   >
-    <li
-      data-aos="fade-up"
-      v-for="(desc, skill) in skills"
-      :key="skill"
-      :class="skill != 0 ? 'mt-8' : ''"
+    <div id="skills" class="w-2/3">
+      <div class="text-3xl sm:text-5xl font-bold">
+        <span class="bg-redish-500 px-4">#</span>
+        My Skills
+      </div>
+      <div class="py-2">
+        I'v been always interested in so many things, Web, Desktop, AI, etc. And
+        that led me to learn different technologies and tools.
+      </div>
+    </div>
+    <ul
+      class="w-2/3 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 text-white fira-code"
     >
-      <div class="flex">
-        <div class="flex-shrink-0">
-          <div class="flex items-center justify-center h-12 w-12 bg-redish-500">
-            <!-- Heroicon name: globe-alt -->
-            <svg
-              class="h-6 w-6"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+      <li data-aos="fade-up" v-for="(info, skill) in skills" :key="skill">
+        <div class="flex">
+          <div class="flex-shrink-0">
+            <div
+              class="flex items-center justify-center h-12 w-12 bg-redish-500"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-              />
-            </svg>
+              <v-icon :name="info.icon" class="text-white w-6 h-auto" />
+            </div>
+          </div>
+          <div class="ml-4">
+            <h4 class="text-lg leading-6 font-bold">
+              {{ skill }}
+            </h4>
+            <p class="mt-2 text-base leading-6 text-gray-500">
+              {{ info.desc }}
+            </p>
+            <div class="w-2/3 bg-redish-500 rounded-full text-center">
+              80%
+            </div>
           </div>
         </div>
-        <div class="ml-4">
-          <h4 class="text-lg leading-6 font-bold">
-            {{ skill }}
-          </h4>
-          <p class="mt-2 text-base leading-6 text-gray-500">
-            {{ desc }}
-          </p>
-        </div>
-      </div>
-    </li>
-  </ul>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
@@ -46,16 +46,27 @@ export default {
   name: "Skills",
   data() {
     return {
-      animations: [],
       skills: {
-        "Web Development":
-          "lorem picsum lorem picsum lorem picsum lorem picsum lorem picsum lorem picsum lorem picsum ",
-        "Artificial Intelligence":
-          "lorem picsum lorem picsum lorem picsum lorem picsum lorem picsum lorem picsum lorem picsum ",
-        "Graphic Design":
-          "lorem picsum lorem picsum lorem picsum lorem picsum lorem picsum lorem picsum lorem picsum ",
-        "Desktop Development":
-          "lorem picsum lorem picsum lorem picsum lorem picsum lorem picsum lorem picsum lorem picsum ",
+        "Web Development": {
+          icon: "code",
+          desc:
+            "lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+        },
+        "Artificial Intelligence": {
+          icon: "robot",
+          desc:
+            "lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+        },
+        "Desktop Development": {
+          icon: "laptop-code",
+          desc:
+            "lorem ipsum holly doing better go back there in time daily planet superman batman.",
+        },
+        "Graphic Design": {
+          icon: "crop",
+          desc:
+            "llorem ipsum holly doing better go back there in time daily planet superman batman",
+        },
       },
     };
   },
