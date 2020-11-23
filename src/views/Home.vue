@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-1 grid grid-cols-12 py-40 h-full">
+  <div class="flex-1 grid grid-col-2 sm:grid-cols-12 py-40 h-full">
     <div
       data-aos="fade-right"
       class="col-start-3 col-span-5 flex flex-col flex-1 gap-y-3"

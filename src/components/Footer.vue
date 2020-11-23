@@ -3,10 +3,16 @@
     class="flex flex-col items-center gap-y-4 justify-center text-white bg-redish-700 py-5"
   >
     <div
-      class="grid grid-cols-4 gap-x-8 sm:gap-x-16 gap-y-4 items-center justify-center"
+      class="grid grid-cols-5 gap-x-8 sm:gap-x-16 gap-y-4 items-center justify-center"
     >
       <a :href="github" target="_blank">
         <v-icon name="brands/github" class="hover:text-gray-300 w-10 h-auto" />
+      </a>
+      <a :href="stackoverflow" target="_blank">
+        <v-icon
+          name="brands/stack-overflow"
+          class="hover:text-gray-300 w-10 h-auto"
+        />
       </a>
       <a :href="linkedin" target="_blank">
         <v-icon
@@ -26,7 +32,7 @@
     </div>
     <hr />
     <div>
-      Copyright reserved - 2020.
+      Built by @chemsedd. Copyrights reserved - 2020.
     </div>
   </footer>
 </template>
@@ -37,9 +43,10 @@ export default {
   data() {
     return {
       github: "https://github.com/chemsedd",
-      linkedin: "https://github.com/chemsedd",
-      behance: "https://github.com/chemsedd",
-      instagram: "https://github.com/chemsedd",
+      stackoverflow: "https://stackoverflow.com/users/8142734/chems-eddine",
+      linkedin: "https://www.linkedin.com/in/chemsedd",
+      behance: "https://behance.com/chemsedd",
+      instagram: "https://www.instagram.com/sun.art.tech",
     };
   },
 };
