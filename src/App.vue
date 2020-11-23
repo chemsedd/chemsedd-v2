@@ -6,6 +6,7 @@
     <main class="flex flex-col justify-center items-center">
       <Home />
       <About />
+      <Fields />
       <Skills />
     </main>
     <Footer />
@@ -16,6 +17,7 @@
 import NavBar from "./components/NavBar.vue";
 import Home from "./views/Home.vue";
 import About from "./views/About.vue";
+import Fields from "./views/Fields.vue";
 import Skills from "./views/Skills.vue";
 import Footer from "./components/Footer.vue";
 
@@ -24,6 +26,7 @@ export default {
     NavBar,
     Home,
     About,
+    Fields,
     Skills,
     Footer,
   },
