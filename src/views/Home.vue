@@ -1,8 +1,8 @@
 <template>
-  <div class="flex-1 grid grid-col-2 sm:grid-cols-12 py-40 h-full">
+  <div id="home" class="flex-1 grid grid-col-2 sm:grid-cols-12 py-40 h-full">
     <div
       data-aos="fade-right"
-      class="col-start-3 col-span-5 flex flex-col flex-1 gap-y-3"
+      class="col-start- sm:col-start-3 sm:col-span-5 flex flex-col flex-1 gap-y-3"
     >
       <div class="text-4xl text-white fira-code font-extrabold">
         Mr.Chems Eddine Senoussi

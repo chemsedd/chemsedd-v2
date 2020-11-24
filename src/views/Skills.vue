@@ -1,6 +1,6 @@
 <template>
   <div
-    id="tools"
+    id="skills"
     class="flex flex-col gap-y-12 min-h-screen items-center justify-center text-white my-10 sm:my-0"
   >
     <div data-aos="fade-up" class="w-2/3 text-3xl sm:text-5xl font-bold">

@@ -1,5 +1,8 @@
 <template>
-  <div class="min-h-screen flex items-center justify-center my-10 sm:my-0">
+  <div
+    id="about"
+    class="min-h-screen flex items-center justify-center my-10 sm:my-0"
+  >
     <div class="flex items-center justify-center w-10/12 shadow-md bg-white">
       <div
         class="w-4/5 grid grid-cols-1 sm:grid-cols-3 gap-y-10 sm:gap-x-16 items-center text-dark fira-code my-24"

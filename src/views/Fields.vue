@@ -1,5 +1,6 @@
 <template>
   <div
+    id="fields"
     class="min-h-screen flex flex-col gap-y-16 items-center justify-center text-white my-10 sm:my-0"
   >
     <div id="Fields" data-aos="fade-up" class="w-2/3">
