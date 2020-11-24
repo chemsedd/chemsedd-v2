@@ -15,6 +15,12 @@
       </a>
     </div>
     <div class="flex-1 grid">
+      <a href="#fields">
+        Fields
+        <div class="bg-redish-500 mt-1 w-10 h-1 hidden"></div>
+      </a>
+    </div>
+    <div class="flex-1 grid">
       <a href="#skills">
         Skills
         <div class="bg-redish-500 mt-1 w-10 h-1 hidden"></div>

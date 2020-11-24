@@ -8,7 +8,11 @@
       <About />
       <Fields />
       <Skills />
+      <contact />
     </main>
+    <div class="page-up w-10 h-10 self-center bg-redish-500 text-white">
+      Up
+    </div>
     <Footer />
   </div>
 </template>
@@ -19,6 +23,7 @@ import Home from "./views/Home.vue";
 import About from "./views/About.vue";
 import Fields from "./views/Fields.vue";
 import Skills from "./views/Skills.vue";
+import Contact from "./views/Contact.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
@@ -28,6 +33,7 @@ export default {
     About,
     Fields,
     Skills,
+    Contact,
     Footer,
   },
 };
@@ -49,5 +55,11 @@ body {
 
 .fira-code {
   font-family: "Fira Code";
+}
+
+.page-up {
+  right: 20px;
+  bottom: 20px;
+  @apply sticky;
 }
 </style>
