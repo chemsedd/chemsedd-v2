@@ -1,5 +1,5 @@
 <template>
-  <div id="app h-screen w-screen">
+  <div id="app">
     <div class="grid grid-cols-1 md:grid-cols-12 py-8">
       <nav-bar />
     </div>
@@ -8,11 +8,9 @@
       <About />
       <Fields />
       <Skills />
-      <contact />
+      <Work />
+      <Contact />
     </main>
-    <div class="page-up w-10 h-10 self-center bg-redish-500 text-white">
-      Up
-    </div>
     <Footer />
   </div>
 </template>
@@ -23,6 +21,7 @@ import Home from "./views/Home.vue";
 import About from "./views/About.vue";
 import Fields from "./views/Fields.vue";
 import Skills from "./views/Skills.vue";
+import Work from "./views/Work.vue";
 import Contact from "./views/Contact.vue";
 import Footer from "./components/Footer.vue";
 
@@ -33,6 +32,7 @@ export default {
     About,
     Fields,
     Skills,
+    Work,
     Contact,
     Footer,
   },
@@ -55,11 +55,5 @@ body {
 
 .fira-code {
   font-family: "Fira Code";
-}
-
-.page-up {
-  right: 20px;
-  bottom: 20px;
-  @apply sticky;
 }
 </style>
