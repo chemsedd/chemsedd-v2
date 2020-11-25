@@ -20,7 +20,7 @@
         <div class="flex">
           <div class="flex-shrink-0">
             <div
-              class="flex items-center justify-center h-12 w-12 bg-redish-500"
+              class="flex items-center justify-center h-12 w-12 rounded-full bg-redish-500"
             >
               <v-icon :name="info.icon" class="text-white w-6 h-auto" />
             </div>
@@ -32,9 +32,6 @@
             <p class="mt-2 text-base leading-6 text-gray-500">
               {{ info.desc }}
             </p>
-            <div class="w-2/3 bg-redish-500 rounded-full text-center">
-              80%
-            </div>
           </div>
         </div>
       </li>
