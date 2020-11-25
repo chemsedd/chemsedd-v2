@@ -21,7 +21,7 @@
         developer.
       </div>
       <div
-        class="grid grid-cols-1 sm:grid-cols-4 gap-x-20 justify-center text-center"
+        class="grid grid-cols-1 sm:grid-cols-4 gap-x-20 gap-y-8 justify-center text-center"
       >
         <div class="flex flex-col bg-white">
           <div class="w-full">
@@ -63,47 +63,55 @@
       <!-- Design Work -->
       <div class="flex items-center gap-x-4 text-xl">
         <div
-          class="w-12 h-12 flex items-center justify-center rounded-full bg-redish-500"
+          class="w-12 h-12 flex flex-col sm:flex-row items-center justify-center rounded-full bg-redish-500"
         >
           <v-icon name="crop" class="w-6 h-6" />
         </div>
         <span class="font-bold">As a Graphic Designer:</span> with 3 years of
         experience.
       </div>
-      <div
-        class="grid grid-cols-1 sm:grid-cols-4 gap-x-20 justify-center text-center"
-      >
-        <div class="flex flex-col bg-white  overflow-scroll">
-          <div class="w-full">
-            <img
-              src="../assets/work/logos/ride-proud.jpg"
-              alt="smart green"
-              class="w-full"
-            />
-          </div>
-          <div class="w-full">
-            <img
-              src="../assets/work/logos/ride-proud.jpg"
-              alt="smart green"
-              class="w-full"
-            />
-          </div>
-          <div class="w-full">
-            <img
-              src="../assets/work/logos/ride-proud.jpg"
-              alt="smart green"
-              class="w-full"
-            />
-          </div>
-        </div>
+      <div class="flex flex-col items-center justify-center w-full">
+        <carousel :perPage="3">
+          <slide v-for="logo in logosPaths" :key="logo">
+            <img :src="logo" :alt="logo" />
+          </slide>
+        </carousel>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { Carousel, Slide } from "vue-carousel";
+
 export default {
   name: "Work",
+  components: {
+    Carousel,
+    Slide,
+  },
+  data() {
+    return {
+      logos: [
+        "startup-camp",
+        "ride-proud",
+        "falsh-delivery",
+        "galaxynet",
+        "om-djebril",
+        "dmps",
+        "tech-talks",
+      ],
+    };
+  },
+  computed: {
+    logosPaths() {
+      var paths = [];
+      this.logos.forEach((logo) => {
+        paths.push(require(`@/assets/work/logos/${logo}.jpg`));
+      });
+      return paths;
+    },
+  },
 };
 </script>
 

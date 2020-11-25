@@ -26,42 +26,32 @@
       </div>
     </div>
     <div class="col-start-8 col-span-3 grid grid-cols-1">
-      <kinesis-container>
-        <div class="relative">
-          <kinesis-element :strength="10">
-            <div
-              id="white-square"
-              class="absolute h-56 w-56 bg-gray-100 shadow-lg"
-            ></div>
-          </kinesis-element>
-          <kinesis-element :strength="10">
-            <div
-              id="red-square"
-              class="absolute h-56 w-56 bg-redish-500 shadow-lg"
-            ></div>
-          </kinesis-element>
-          <kinesis-element :strength="10">
-            <div id="six-dots-1" class="absolute grid grid-cols-3 gap-4">
-              <div class="bg-white rounded-full w-4 h-4"></div>
-              <div class="bg-white rounded-full w-4 h-4"></div>
-              <div class="bg-redish-500 rounded-full w-4 h-4"></div>
-              <div class="bg-white rounded-full w-4 h-4"></div>
-              <div class="bg-white rounded-full w-4 h-4"></div>
-              <div class="bg-redish-500 rounded-full w-4 h-4"></div>
-            </div>
-          </kinesis-element>
-          <kinesis-element :strength="10">
-            <div id="six-dots-2" class="absolute grid grid-cols-3 gap-4">
-              <div class="bg-white rounded-full w-4 h-4"></div>
-              <div class="bg-white rounded-full w-4 h-4"></div>
-              <div class="bg-redish-500 rounded-full w-4 h-4"></div>
-              <div class="bg-white rounded-full w-4 h-4"></div>
-              <div class="bg-white rounded-full w-4 h-4"></div>
-              <div class="bg-redish-500 rounded-full w-4 h-4"></div>
-            </div>
-          </kinesis-element>
+      <div class="relative">
+        <div
+          id="white-square"
+          class="absolute h-56 w-56 bg-gray-100 shadow-lg"
+        ></div>
+        <div
+          id="red-square"
+          class="absolute h-56 w-56 bg-redish-500 shadow-lg"
+        ></div>
+        <div id="six-dots-1" class="absolute grid grid-cols-3 gap-4">
+          <div class="bg-white rounded-full w-4 h-4"></div>
+          <div class="bg-white rounded-full w-4 h-4"></div>
+          <div class="bg-redish-500 rounded-full w-4 h-4"></div>
+          <div class="bg-white rounded-full w-4 h-4"></div>
+          <div class="bg-white rounded-full w-4 h-4"></div>
+          <div class="bg-redish-500 rounded-full w-4 h-4"></div>
         </div>
-      </kinesis-container>
+        <div id="six-dots-2" class="absolute grid grid-cols-3 gap-4">
+          <div class="bg-white rounded-full w-4 h-4"></div>
+          <div class="bg-white rounded-full w-4 h-4"></div>
+          <div class="bg-redish-500 rounded-full w-4 h-4"></div>
+          <div class="bg-white rounded-full w-4 h-4"></div>
+          <div class="bg-white rounded-full w-4 h-4"></div>
+          <div class="bg-redish-500 rounded-full w-4 h-4"></div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -85,7 +75,7 @@ export default {
 }
 
 #six-dots-1 {
-  bottom: 20px;
+  bottom: 0px;
   right: 70px;
 }
 
