@@ -3,19 +3,20 @@
     id="about"
     class="min-h-screen flex items-center justify-center my-10 sm:my-0"
   >
+    <!-- data-aos="fade-up" -->
     <div
       class="flex items-center justify-center w-10/12 shadow-2xl bg-gray-100 rounded-3xl"
     >
       <!-- My bio -->
       <div
-        class="px-10 grid grid-cols-1 sm:grid-cols-3 gap-y-10 sm:gap-x-4 items-center text-dark fira-code my-24"
+        class="px-10 grid grid-cols-1 sm:grid-cols-3 gap-y-10 sm:gap-x-4 items-center text-dark  my-24"
       >
-        <div data-aos="fade-right" class="sm:col-span-2 flex flex-col flex-1">
-          <div class="text-3xl sm:text-5xl text-redish-500 font-bold">
+        <div class="sm:col-span-2 flex flex-col flex-1">
+          <div class="text-3xl sm:text-5xl font-bold text-redish-500 h-20">
             <span class="bg-redish-500 px-4 rounded-lg text-white">#</span>
             About me
           </div>
-          <div class="pt-4 leading-7 text-gray-800">
+          <div class="pt-4 leading-7 text-gray-800 fira-code">
             I am <span class="key-word">Chems Eddine Senoussi</span>, a Computer
             Science graduate with Master's degree in
             <span class="key-word">Artificial Intelligence</span>. I'm so
@@ -27,8 +28,8 @@
           </div>
         </div>
         <!-- Infos about me -->
-        <div data-aos="fade-left" class="flex justify-center items-center">
-          <dl class="grid grid-cols-2">
+        <div class="justify-center items-center hidden">
+          <ul class="grid grid-cols-2">
             <dt><v-icon class="listed-icon" name="birthday-cake" /></dt>
             <dd>
               <span class="key-word"> October 1<sup>st</sup>, 1995. </span>
@@ -58,7 +59,7 @@
                 </ul>
               </dd>
             </dl>
-          </dl>
+          </ul>
         </div>
       </div>
       <a href="#app" class="page-up" data-aos="fade-up">

@@ -1,7 +1,7 @@
 <template>
   <div
     data-aos="fade-up"
-    class="flex flex-col bg-redish-500 items-center justify-center text-center rounded-3xl p-6 shadow-2xl"
+    class="flex flex-col bg-white items-center justify-center text-center rounded-3xl p-6 shadow-2xl"
   >
     <slot></slot>
   </div>
@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: "SkillCard",
+  name: "WorkCard",
 };
 </script>
 

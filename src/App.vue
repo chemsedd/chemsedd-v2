@@ -36,6 +36,9 @@ export default {
     Contact,
     Footer,
   },
+  metaInfo: {
+    title: "Chems Eddine Senoussi 💻 Personal Website",
+  },
 };
 </script>
 

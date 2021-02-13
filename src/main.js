@@ -1,4 +1,5 @@
 import Vue from "vue";
+import VueMeta from "vue-meta";
 import App from "./App.vue";
 import router from "./router";
 // Icons
@@ -7,14 +8,12 @@ import Icon from "vue-awesome/components/Icon";
 // Animation
 import { KinesisContainer, KinesisElement } from "vue-kinesis";
 import AOS from "aos";
-// Caroussel
-// import VueCarousel from "vue-carousel";
 
 import "aos/dist/aos.css";
 import "./assets/css/tailwind.css";
 
+Vue.use(VueMeta);
 Vue.component("v-icon", Icon);
-// Vue.use(VueCarousel);
 Vue.component("kinesis-container", KinesisContainer);
 Vue.component("kinesis-element", KinesisElement);
 
