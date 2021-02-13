@@ -5,12 +5,8 @@
   >
     <div id="Fields" data-aos="fade-up" class="w-2/3">
       <div class="text-3xl sm:text-5xl font-bold">
-        <span class="bg-redish-500 px-4">#</span>
+        <span class="bg-redish-500 px-4 rounded-lg">#</span>
         My Fields
-      </div>
-      <div class="py-2">
-        I'v been always interested in so many things, Web, Desktop, AI, etc. And
-        that led me to learn different technologies and tools.
       </div>
     </div>
     <ul
@@ -48,22 +44,22 @@ export default {
         "Web Development": {
           icon: "code",
           desc:
-            "lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+            "I am interested in web development since my chidhood. Working on creating new powerfull web applications is a passion, with the latest technologies.",
         },
         "Artificial Intelligence": {
           icon: "robot",
           desc:
-            "lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+            "I graduated with a Master's degree in Artificial Intelligence from Biskra University. I worked on small projects based on Machine/Deep learning, data analysis and data visualization.",
         },
         "Desktop Development": {
           icon: "laptop-code",
           desc:
-            "lorem ipsum holly doing better go back there in time daily planet superman batman.",
+            "I also work on developing desktop apps (mostly on windows), I use different technologies depanding on the type of app.",
         },
         "Graphic Design": {
           icon: "crop",
           desc:
-            "llorem ipsum holly doing better go back there in time daily planet superman batman",
+            "I worked on many projects with different agencies and associations as a designer. I was responsable for creating the virtual indentity and all printables (documents, roll-up and posters).",
         },
       },
     };

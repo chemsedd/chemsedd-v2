@@ -6,6 +6,10 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
+      fontSize: {
+        "7xl": "6.3rem",
+        "8xl": "6.6rem",
+      },
       colors: {
         dark: "#001528",
         redish: {
@@ -15,6 +19,8 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    fontSize: ["responsive"],
+  },
   plugins: [],
 };

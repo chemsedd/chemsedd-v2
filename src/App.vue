@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <div class="grid grid-cols-1 md:grid-cols-12 py-8">
+    <!-- <div class="grid grid-cols-1 md:grid-cols-12">
       <nav-bar />
-    </div>
+    </div> -->
     <main class="flex flex-col justify-center items-center">
       <Home />
       <About />

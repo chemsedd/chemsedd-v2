@@ -1,57 +1,44 @@
 <template>
-  <div id="home" class="flex-1 grid grid-col-2 sm:grid-cols-12 py-40 h-full">
+  <div
+    id="home"
+    class="flex-1 grid grid-cols-1 gap-x-4 w-10/12 sm:grid-cols-2 justify-center items-center min-h-screen"
+  >
     <div
       data-aos="fade-right"
-      class="col-start- sm:col-start-3 sm:col-span-5 flex flex-col flex-1 gap-y-3"
+      class="flex flex-col gap-y-3 justify-center items-center text-center"
     >
-      <div class="text-4xl text-white fira-code font-extrabold">
-        Mr.Chems Eddine Senoussi
-        <div class="bg-redish-500 w-2/12 h-2"></div>
+      <div class="md:text-8xl text-7xl text-white fira-code font-bold">
+        .hello!
       </div>
-      <h5 class="text-lg text-white fira-code font-thin">
-        //I am a <span class="font-bold px-2">Web Developer</span> &
+      <h1 class="md:text-3xl text-2xl font-bold fira-code text-white">
+        <span class="font-thin">I am</span> Chems Eddine Senoussi
+      </h1>
+      <div
+        class="md:text-2xl text-lg fira-code font-thin text-white opacity-75"
+      >
+        <span class="text-redish-500 font-bold">//</span>
+        <span class=" font-bold px-2">Web Developer</span> &
         <span class="font-bold px-2">Graphic Designer</span>
-      </h5>
-      <div class="grid grid-cols-8 gap-3 p-4 text-white">
-        <button
-          class="h-10 col-span-3 bg-redish-500 hover:bg-redish-700 font-bold"
-        >
+      </div>
+      <div
+        class="inline-flex justify-center items-center w-full gap-x-3 text-white"
+      >
+        <button class="w-48 h-10 bg-redish-500 hover:bg-redish-700 font-bold">
           Resume
         </button>
         <button
-          class="h-10 col-span-3 border border-gray-200 hover:bg-redish-700 hover:bg-opacity-25 font-bold"
+          class="w-48 h-10 border border-gray-200 hover:bg-redish-700 hover:bg-opacity-25 font-bold"
         >
           Contact
         </button>
       </div>
     </div>
-    <div class="col-start-8 col-span-3 grid grid-cols-1">
-      <div class="relative">
-        <div
-          id="white-square"
-          class="absolute h-56 w-56 bg-gray-100 shadow-lg"
-        ></div>
-        <div
-          id="red-square"
-          class="absolute h-56 w-56 bg-redish-500 shadow-lg"
-        ></div>
-        <div id="six-dots-1" class="absolute grid grid-cols-3 gap-4">
-          <div class="bg-white rounded-full w-4 h-4"></div>
-          <div class="bg-white rounded-full w-4 h-4"></div>
-          <div class="bg-redish-500 rounded-full w-4 h-4"></div>
-          <div class="bg-white rounded-full w-4 h-4"></div>
-          <div class="bg-white rounded-full w-4 h-4"></div>
-          <div class="bg-redish-500 rounded-full w-4 h-4"></div>
-        </div>
-        <div id="six-dots-2" class="absolute grid grid-cols-3 gap-4">
-          <div class="bg-white rounded-full w-4 h-4"></div>
-          <div class="bg-white rounded-full w-4 h-4"></div>
-          <div class="bg-redish-500 rounded-full w-4 h-4"></div>
-          <div class="bg-white rounded-full w-4 h-4"></div>
-          <div class="bg-white rounded-full w-4 h-4"></div>
-          <div class="bg-redish-500 rounded-full w-4 h-4"></div>
-        </div>
-      </div>
+    <div data-aos="fade-left" class="flex flex-1 items-center justify-center">
+      <img
+        src="@/assets/me-b&w.jpg"
+        alt="chems eddine senoussi"
+        class="w-9/12 rounded-3xl shadow-2xl"
+      />
     </div>
   </div>
 </template>
@@ -65,22 +52,14 @@ export default {
 
 <style>
 #white-square {
-  top: -100px;
-  right: 0px;
 }
 
 #red-square {
-  top: 50px;
-  right: 90px;
 }
 
 #six-dots-1 {
-  bottom: 0px;
-  right: 70px;
 }
 
 #six-dots-2 {
-  top: -10px;
-  left: 40px;
 }
 </style>
