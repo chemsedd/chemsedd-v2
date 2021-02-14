@@ -8,7 +8,8 @@
       <About class="section" />
       <Fields class="section" />
       <Skills class="section" />
-      <Work class="section" />
+      <DevWork class="section" />
+      <DesignWork class="section" />
       <Contact class="section" />
     </main>
     <Footer class="section" />
@@ -16,13 +17,13 @@
 </template>
 
 <script>
-// Icons
 import NavBar from "./components/NavBar.vue";
 import Home from "./views/Home.vue";
 import About from "./views/About.vue";
 import Fields from "./views/Fields.vue";
 import Skills from "./views/Skills.vue";
-import Work from "./views/Work.vue";
+import DevWork from "./views/DevWork.vue";
+import DesignWork from "./views/DesignWork.vue";
 import Contact from "./views/Contact.vue";
 import Footer from "./components/Footer.vue";
 
@@ -33,7 +34,8 @@ export default {
     About,
     Fields,
     Skills,
-    Work,
+    DevWork,
+    DesignWork,
     Contact,
     Footer,
   },

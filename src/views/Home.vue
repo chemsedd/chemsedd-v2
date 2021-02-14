@@ -1,7 +1,7 @@
 <template>
   <div
     id="home"
-    class="flex-1 grid grid-cols-1 gap-x-4 w-10/12 sm:grid-cols-2 justify-center items-center min-h-screen"
+    class="flex-1 grid grid-cols-1 gap-x-4 gap-y-10 w-10/12 sm:grid-cols-2 justify-center items-center min-h-screen"
   >
     <div
       data-aos="fade-right"

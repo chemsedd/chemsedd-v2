@@ -2,8 +2,8 @@ import Vue from "vue";
 import VueMeta from "vue-meta";
 import App from "./App.vue";
 import router from "./router";
-// Scrolling
-import gsap from "gsap";
+// Icons
+import "vue-awesome/icons";
 import Icon from "vue-awesome/components/Icon";
 // Animation
 import { KinesisContainer, KinesisElement } from "vue-kinesis";

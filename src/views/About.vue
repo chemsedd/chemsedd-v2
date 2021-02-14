@@ -94,12 +94,12 @@ export default {
 
 .page-up {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
-  @apply w-10 h-10 flex items-center justify-center bg-redish-500 text-white;
+  right: 50px;
+  bottom: 50px;
+  @apply w-10 h-10 rounded-full flex items-center justify-center bg-redish-500 text-white shadow-lg;
 }
 
 .page-up:hover {
-  @apply bg-redish-700 text-gray-300;
+  @apply bg-redish-700 shadow-outline;
 }
 </style>
