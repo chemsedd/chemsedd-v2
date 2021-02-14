@@ -3,14 +3,7 @@
     id="contact"
     class="min-h-screen w-full flex flex-col gap-y-16 items-center justify-center text-white my-10 sm:my-0"
   >
-    <div data-aos="fade-up" class="w-2/3">
-      <div data-aos="fade-up" class="w-2/3">
-        <div data-aos="fade-up" class="w-2/3 text-3xl sm:text-5xl font-bold">
-          <span class="bg-redish-500 px-4 rounded-lg">#</span>
-          Contact Me
-        </div>
-      </div>
-    </div>
+    <c-title>Contact Me</c-title>
     <div class="w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-8">
       <div class="" data-aos="fade-right">
         <div class="grid grid-cols-1 justify-between h-full">
@@ -89,8 +82,13 @@
 </template>
 
 <script>
+import CTitle from "../components/Title.vue";
+
 export default {
   name: "Contact",
+  components: {
+    CTitle,
+  },
 };
 </script>
 

@@ -3,12 +3,7 @@
     id="work"
     class="min-h-screen w-full flex flex-col gap-y-16 items-center justify-center text-white my-10 sm:my-0"
   >
-    <div data-aos="fade-up" class="w-2/3">
-      <div data-aos="fade-up" class="w-2/3 text-3xl sm:text-5xl font-bold">
-        <span class="bg-redish-500 px-4 rounded-lg">#</span>
-        My Work
-      </div>
-    </div>
+    <c-title>My Work</c-title>
     <div class="w-2/3 flex flex-col gap-y-10">
       <!-- Development Work -->
       <div data-aos="fade-up" class="flex items-center gap-x-4 text-xl">
@@ -17,8 +12,7 @@
         >
           <v-icon name="laptop-code" class="w-6 h-6" />
         </div>
-        <span class="font-bold">As a Developer:</span>Some of my work as a
-        developer.
+        <div class="font-bold">As a Developer</div>
       </div>
       <div
         class="grid grid-cols-1 sm:grid-cols-4 gap-x-20 gap-y-8 justify-center text-center"
@@ -61,14 +55,13 @@
         </work-card>
       </div>
       <!-- Design Work -->
-      <div data-aos="fade-up" class="flex items-center gap-x-4 text-xl">
+      <div data-aos="fade-up" class="flex items-center gap-x-4 text-xl mt-5">
         <div
           class="w-12 h-12 flex flex-col sm:flex-row items-center justify-center rounded-full bg-redish-500"
         >
           <v-icon name="crop" class="w-6 h-6" />
         </div>
-        <span class="font-bold">As a Graphic Designer:</span> with 3 years of
-        experience.
+        <span class="font-bold">As a Graphic Designer</span>
       </div>
       <div
         class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-6 items-center justify-center w-full"
@@ -91,12 +84,14 @@
 </template>
 
 <script>
+import CTitle from "../components/Title.vue";
 import WorkCard from "../components/WorkCard.vue";
 import { Carousel, Slide } from "vue-carousel";
 
 export default {
   name: "Work",
   components: {
+    CTitle,
     WorkCard,
     Carousel,
     Slide,
@@ -108,8 +103,8 @@ export default {
         "ride-proud",
         "falsh-delivery",
         "galaxynet",
-        "om-djebril",
         "dmps",
+        "om-djebril",
         "tech-talks",
       ],
     };

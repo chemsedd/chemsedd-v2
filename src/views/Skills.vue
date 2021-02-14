@@ -3,10 +3,7 @@
     id="skills"
     class="flex flex-col gap-y-12 min-h-screen items-center justify-center text-white my-10 sm:my-0"
   >
-    <div data-aos="fade-up" class="w-2/3 text-3xl sm:text-5xl font-bold">
-      <span class="bg-redish-500 px-4 rounded-lg">#</span>
-      My Skills
-    </div>
+    <c-title>My Skills</c-title>
     <div class="w-2/3 grid grid-cols-1 sm:grid-cols-3 gap-16">
       <!-- Vue JS -->
       <skill-card>
@@ -43,11 +40,13 @@
 </template>
 
 <script>
+import CTitle from "../components/Title.vue";
 import SkillCard from "../components/SkillCard.vue";
 
 export default {
   name: "Skills",
   components: {
+    CTitle,
     SkillCard,
   },
 };

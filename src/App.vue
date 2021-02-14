@@ -4,18 +4,19 @@
       <nav-bar />
     </div> -->
     <main class="flex flex-col justify-center items-center">
-      <Home />
-      <About />
-      <Fields />
-      <Skills />
-      <Work />
-      <Contact />
+      <Home class="section" />
+      <About class="section" />
+      <Fields class="section" />
+      <Skills class="section" />
+      <Work class="section" />
+      <Contact class="section" />
     </main>
-    <Footer />
+    <Footer class="section" />
   </div>
 </template>
 
 <script>
+// Icons
 import NavBar from "./components/NavBar.vue";
 import Home from "./views/Home.vue";
 import About from "./views/About.vue";
@@ -43,6 +44,10 @@ export default {
 </script>
 
 <style>
+html {
+  scroll-snap-type: y mandatory;
+}
+
 body {
   @apply bg-gray-900;
   background-image: linear-gradient(
@@ -58,5 +63,8 @@ body {
 
 .fira-code {
   font-family: "Fira Code";
+}
+.section {
+  scroll-snap-align: start;
 }
 </style>

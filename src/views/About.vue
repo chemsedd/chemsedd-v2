@@ -12,9 +12,9 @@
         class="px-10 grid grid-cols-1 sm:grid-cols-3 gap-y-10 sm:gap-x-4 items-center text-dark  my-24"
       >
         <div class="sm:col-span-2 flex flex-col flex-1">
-          <div class="text-3xl sm:text-5xl font-bold text-redish-500 h-20">
-            <span class="bg-redish-500 px-4 rounded-lg text-white">#</span>
-            About me
+          <div class="text-4xl sm:text-6xl font-bold">
+            <span class="underline text-redish-500 px-4 rounded-lg">#</span>
+            About Me
           </div>
           <div class="pt-4 leading-7 text-gray-800 fira-code">
             I am <span class="key-word">Chems Eddine Senoussi</span>, a Computer

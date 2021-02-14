@@ -3,12 +3,7 @@
     id="fields"
     class="min-h-screen flex flex-col gap-y-16 items-center justify-center text-white my-10 sm:my-0"
   >
-    <div id="Fields" data-aos="fade-up" class="w-2/3">
-      <div class="text-3xl sm:text-5xl font-bold">
-        <span class="bg-redish-500 px-4 rounded-lg">#</span>
-        My Fields
-      </div>
-    </div>
+    <c-title id="Fields">My Fields</c-title>
     <ul
       class="w-2/3 grid grid-cols-1 sm:grid-cols-2 sm:gap-x-8 gap-y-5 sm:gap-y-10 text-white fira-code"
     >
@@ -36,8 +31,12 @@
 </template>
 
 <script>
+import CTitle from "../components/Title.vue";
 export default {
   name: "Fields",
+  components: {
+    CTitle,
+  },
   data() {
     return {
       Fields: {
