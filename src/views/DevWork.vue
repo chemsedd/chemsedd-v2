@@ -9,7 +9,7 @@
       <template v-slot="{ params }">
         <div class="flex items-center justify-center h-screen">
           <div
-            class="w-6/12 bg-white rounded-3xl flex flex-col items-center justify-center shadow-2xl relative"
+            class="w-10/12 md:w-6/12 bg-white rounded-3xl flex flex-col items-center justify-center shadow-2xl relative"
           >
             <button
               class="bg-redish-500 hover:bg-redish-700 inline-flex items-center px-1 py-1 h-8 rounded absolute-close"

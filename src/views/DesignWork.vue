@@ -9,7 +9,7 @@
       <template v-slot="{ params }">
         <div class="flex items-center justify-center h-screen p-10">
           <div
-            class="w-6/12 rounded-3xl flex flex-col items-center justify-center shadow-2xl relative"
+            class="w-11/12 md:w-6/12 rounded-3xl flex flex-col items-center justify-center shadow-2xl relative"
           >
             <img
               :src="params.pic"
