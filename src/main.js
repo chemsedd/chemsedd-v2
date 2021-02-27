@@ -12,7 +12,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./assets/css/tailwind.css";
 
+// Vue modal
+import VueFinalModal from "vue-final-modal";
+
 Vue.use(VueMeta);
+Vue.use(VueFinalModal());
 Vue.component("v-icon", Icon);
 Vue.component("kinesis-container", KinesisContainer);
 Vue.component("kinesis-element", KinesisElement);

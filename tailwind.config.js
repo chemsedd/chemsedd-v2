@@ -16,6 +16,7 @@ module.exports = {
           500: "#FF4D5A",
           700: "#ce4049",
         },
+        greenish: "#CEDE43",
       },
     },
   },

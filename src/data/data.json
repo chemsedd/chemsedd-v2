@@ -1,0 +1,32 @@
+{
+  "apps": {
+    "1": {
+      "title": "Dima Queue Management System",
+      "logo": "dqms",
+      "pic": "dqms-1",
+      "bg": "purple-500",
+      "desc": "DQMS is a queue management system for companies and enterprises. It was built with Laravel and Tailwindcss with an efficient backend and a modern looking UI."
+    },
+    "2": {
+      "title": "Mr Diode",
+      "logo": "mrdiode",
+      "bg": "white",
+      "pic": "mrdiode-1",
+      "desc": "An E-Commerce website, built with Wordpress and WooCommerce plugin. It offers smart filtereing technics, intuitive and responsive UI/UX."
+    },
+    "3": {
+      "title": "MoviesDB",
+      "logo": "moviesdb",
+      "bg": "white",
+      "pic": "moviesdb",
+      "desc": "A simple app that uses OMDb API to get data about movies and diplay them to the user."
+    },
+    "4": {
+      "title": "Smart Green",
+      "logo": "smart-green",
+      "bg": "greenish",
+      "pic": "sg-1",
+      "desc": "Smart farming monitoring sytem with data analytics, it's the software part of a whole IoT system built with Raspberry Pi and Arduino to monitor and predict the growth of plants."
+    }
+  }
+}

@@ -23,11 +23,11 @@
       <div
         class="inline-flex justify-center items-center w-full gap-x-3 text-white"
       >
-        <button class="w-48 h-10 bg-redish-500 hover:bg-redish-700 font-bold">
+        <button class="btn bg-redish-500 hover:bg-redish-700">
           Resume
         </button>
         <button
-          class="w-48 h-10 border border-gray-200 hover:bg-redish-700 hover:bg-opacity-25 font-bold"
+          class="btn border border-gray-200 hover:bg-redish-700 hover:bg-opacity-25"
         >
           Contact
         </button>
@@ -50,16 +50,4 @@ export default {
 };
 </script>
 
-<style>
-#white-square {
-}
-
-#red-square {
-}
-
-#six-dots-1 {
-}
-
-#six-dots-2 {
-}
-</style>
+<style></style>

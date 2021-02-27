@@ -1,5 +1,5 @@
 <template>
-  <div data-aos="fade-up" class="w-10/12 md:w-2/3">
+  <div :data-aos="animated" class="w-10/12 md:w-2/3">
     <div
       class="flex items-center justify-center py-2 text-5xl sm:text-6xl font-bold text-center border-2 shadow-2xl rounded-2xl border-redish-500"
     >
@@ -16,6 +16,11 @@
 <script>
 export default {
   name: "CTitle",
+  props: {
+    animated: {
+      required: false,
+    },
+  },
 };
 </script>
 

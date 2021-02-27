@@ -47,7 +47,7 @@ export default {
 
 <style>
 html {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 body {
@@ -68,5 +68,23 @@ body {
 }
 .section {
   scroll-snap-align: start;
+}
+
+.btn {
+  @apply w-48 h-12 rounded-lg shadow-lg font-bold;
+}
+
+.btn:hover {
+  @apply shadow-outline;
+}
+
+.btn:active {
+  @apply shadow-outline;
+}
+
+.absolute-close {
+  top: 20px;
+  right: 20px;
+  position: absolute;
 }
 </style>

@@ -3,7 +3,7 @@
     id="skills"
     class="flex flex-col gap-y-12 min-h-screen items-center justify-center text-white my-10 sm:my-0"
   >
-    <c-title>My Skills</c-title>
+    <c-title animated="fade-up">My Skills</c-title>
     <div class="w-2/3 grid grid-cols-1 sm:grid-cols-3 gap-16">
       <!-- Vue JS -->
       <skill-card>

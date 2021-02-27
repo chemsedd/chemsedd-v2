@@ -4,11 +4,10 @@
     class="min-h-screen flex flex-col items-center justify-center my-10 sm:my-0
     w-full gap-y-10"
   >
-    <c-title>About Me</c-title>
+    <c-title animate="">About Me</c-title>
     <!-- data-aos="fade-up" -->
     <div
       class="flex items-center justify-center w-10/12 shadow-2xl bg-gray-100 rounded-3xl"
-      data-aos="fade"
     >
       <!-- My bio -->
       <div

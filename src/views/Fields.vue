@@ -3,7 +3,7 @@
     id="fields"
     class="min-h-screen flex flex-col gap-y-16 items-center justify-center text-white my-10 sm:my-0"
   >
-    <c-title id="Fields">My Fields</c-title>
+    <c-title animated="fade-up" id="Fields">My Fields</c-title>
     <ul
       class="w-2/3 grid grid-cols-1 sm:grid-cols-2 sm:gap-x-8 gap-y-5 sm:gap-y-10 text-white fira-code"
     >
