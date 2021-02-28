@@ -1,20 +1,20 @@
 <template>
   <div
     id="about"
-    class="min-h-screen flex flex-col items-center justify-center my-10 sm:my-0
-    w-full gap-y-10"
+    class="min-h-screen flex flex-col items-center justify-center my-10 sm:my-0 w-full gap-y-10"
   >
     <c-title animate="">About Me</c-title>
     <!-- data-aos="fade-up" -->
     <div
-      class="flex items-center justify-center w-10/12 shadow-2xl bg-gray-100 rounded-3xl"
+      class="flex items-start bg-dark bg-opacity-50 w-10/12 md:w-8/12 shadow-2xl border-2 border-dashed rounded-3xl"
     >
       <!-- My bio -->
       <div
-        class="px-10 grid grid-cols-1 sm:grid-cols-3 gap-y-10 sm:gap-x-4 items-center text-dark  my-10"
+        class="grid grid-cols-1 sm:grid-cols-4 gap-y-10 sm:gap-x-10 py-10 px-8"
       >
-        <div class="sm:col-span-2 flex flex-col flex-1">
-          <div class="pt-4 leading-7 text-gray-800 fira-code">
+        <!-- Paragraph -->
+        <div class="sm:col-span-3 flex flex-col flex-1">
+          <div class="leading-7 text-white fira-code text-justify">
             I am <span class="key-word">Chems Eddine Senoussi</span>, a Computer
             Science graduate with Master's degree in
             <span class="key-word">Artificial Intelligence</span>. I consider
@@ -30,7 +30,6 @@
             <span class="key-word">graphic designer</span> with more than
             <span class="key-word">4 years of experience</span>.
           </div>
-          <hr class="md:hidden" />
         </div>
         <!-- Infos about me -->
         <dl class="bio-list">
@@ -38,18 +37,18 @@
             <v-icon class="listed-icon" name="birthday-cake" />
           </dt>
           <dd>
-            <span class="key-word"> October 1<sup>st</sup>, 1995. </span>
+            <span class="list-value"> October 1<sup>st</sup>, 1995. </span>
           </dd>
           <dt>
             <v-icon class="listed-icon" name="globe-africa" />
           </dt>
-          <dd><span class="key-word"> Algerian. </span></dd>
+          <dd><span class="list-value"> Algerian. </span></dd>
 
           <dt>
             <v-icon class="listed-icon" name="home" />
           </dt>
           <dd>
-            <span class="key-word"> Biskra, Algeria. </span>
+            <span class="list-value"> Biskra, Algeria. </span>
           </dd>
 
           <dt>
@@ -57,9 +56,9 @@
           </dt>
           <dd>
             <div class="flex flex-col">
-              <span class="key-word"> Arabic (native) </span>
-              <span class="key-word"> English (Fluent) </span>
-              <span class="key-word"> French (Fluent) </span>
+              <span class="list-value"> Arabic (native) </span>
+              <span class="list-value"> English (Fluent) </span>
+              <span class="list-value"> French (Fluent) </span>
             </div>
           </dd>
         </dl>
@@ -89,11 +88,11 @@ export default {
 }
 
 .bio-list {
-  @apply grid grid-cols-8;
+  @apply grid grid-cols-8 gap-x-12 gap-y-4;
 }
 
 .bio-list dt {
-  @apply col-span-1;
+  @apply col-span-1 bg-white w-10 h-10 flex items-center justify-center rounded-full;
 }
 
 .bio-list dd {
@@ -101,7 +100,11 @@ export default {
 }
 
 .listed-icon {
-  @apply h-6 w-auto text-dark;
+  @apply h-6 w-6 text-redish-500;
+}
+
+.list-value {
+  @apply text-white font-bold capitalize;
 }
 
 .page-up {

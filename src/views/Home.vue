@@ -19,21 +19,36 @@
       <div
         class="fira-code font-extrabold text-xl text-redish-500 border-2 border-redish-500 border-dashed rounded-lg p-2"
       >
-        <span class="">//</span>
+        <span>//</span>
         <span class="text-white px-2">Software Engineer</span> &
         <span class="text-white px-2">Graphic Designer</span>
       </div>
       <div
-        class="inline-flex justify-center items-center w-full gap-x-3 text-white"
+        class="grid grid-cols-2 sm:grid-cols-3 justify-center items-center gap-y-4 gap-x-4 text-white w-full"
+        target="_blank"
       >
-        <button class="btn bg-redish-500 hover:bg-redish-700">
-          Resume
-        </button>
-        <button
-          class="btn border border-gray-200 hover:bg-redish-700 hover:bg-opacity-25"
+        <a
+          class="btn a-flex bg-redish-500 hover:bg-redish-700"
+          :href="`${publicPath}cv/en-cv.pdf`"
+          target="_blank"
+          download
+        >
+          Resume [En]
+        </a>
+        <a
+          class="btn a-flex bg-blue-500 hover:bg-blue-700"
+          :href="`${publicPath}cv/fr-cv.pdf`"
+          target="_blank"
+          download
+        >
+          Resume [Fr]
+        </a>
+        <a
+          class="col-span-2 sm:col-span-1 btn a-flex border border-gray-200 hover:bg-redish-700 hover:bg-opacity-25"
+          href="#contact"
         >
           Contact
-        </button>
+        </a>
       </div>
     </div>
     <!-- 
@@ -52,8 +67,16 @@
 <script>
 export default {
   name: "Home",
-  components: {},
+  data() {
+    return {
+      publicPath: process.env.BASE_URL,
+    };
+  },
 };
 </script>
 
-<style></style>
+<style>
+.a-flex {
+  @apply flex items-center justify-center;
+}
+</style>

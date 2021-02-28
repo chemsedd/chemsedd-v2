@@ -31,7 +31,7 @@
       </a>
     </div>
     <hr />
-    <div class="text-dark text-opacity-75">
+    <div class="text-white text-opacity-50">
       By Chems Eddine Senoussi - 2020.
     </div>
   </footer>

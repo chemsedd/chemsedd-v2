@@ -46,8 +46,13 @@ export default {
 </script>
 
 <style>
-html {
-  scroll-snap-type: y proximity;
+@media screen and (min-width: 900px) {
+  html {
+    scroll-snap-type: y proximity;
+  }
+  .section {
+    scroll-snap-align: start;
+  }
 }
 
 body {
@@ -66,12 +71,9 @@ body {
 .fira-code {
   font-family: "Fira Code";
 }
-.section {
-  scroll-snap-align: start;
-}
 
 .btn {
-  @apply w-48 h-12 rounded-lg shadow-lg font-bold;
+  @apply h-12 rounded-lg shadow-lg font-bold;
 }
 
 .btn:hover {
