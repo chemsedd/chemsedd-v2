@@ -10,10 +10,10 @@
     >
       <!-- My bio -->
       <div
-        class="grid grid-cols-1 sm:grid-cols-4 gap-y-10 sm:gap-x-10 py-10 px-8"
+        class="grid grid-cols-1 lg:grid-cols-4 gap-y-10 sm:gap-x-6 py-10 px-8"
       >
         <!-- Paragraph -->
-        <div class="sm:col-span-3 flex flex-col flex-1">
+        <div class="lg:col-span-3 flex flex-col flex-1">
           <div class="leading-7 text-white fira-code text-justify">
             I am <span class="key-word">Chems Eddine Senoussi</span>, a Computer
             Science graduate with Master's degree in
@@ -32,7 +32,7 @@
           </div>
         </div>
         <!-- Infos about me -->
-        <dl class="bio-list">
+        <dl class="bio-list lg:col-span-1">
           <dt>
             <v-icon class="listed-icon" name="birthday-cake" />
           </dt>

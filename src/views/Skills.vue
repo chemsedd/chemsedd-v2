@@ -4,7 +4,9 @@
     class="min-h-screen w-full flex flex-col gap-y-12 items-center justify-center text-white my-10 sm:my-0"
   >
     <c-title animated="fade-up">My Skills</c-title>
-    <div class="w-8/12 grid grid-cols-1 sm:grid-cols-4 gap-6 py-4">
+    <div
+      class="w-8/12 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 py-4"
+    >
       <div
         v-for="tool in tools"
         :key="tool.name"
