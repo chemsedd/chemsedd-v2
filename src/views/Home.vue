@@ -31,7 +31,7 @@
           class="btn a-flex bg-redish-500 hover:bg-redish-700"
           :href="`${publicPath}cv/en-cv.pdf`"
           target="_blank"
-          download
+          download="Chems Eddine Senoussi CV [EN]"
         >
           Resume [En]
         </a>
@@ -39,7 +39,7 @@
           class="btn a-flex bg-blue-500 hover:bg-blue-700"
           :href="`${publicPath}cv/fr-cv.pdf`"
           target="_blank"
-          download
+          download="Chems Eddine SENOUSSI CV [FR]"
         >
           Resume [Fr]
         </a>
