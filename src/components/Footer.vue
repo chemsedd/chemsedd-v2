@@ -31,8 +31,8 @@
       </a>
     </div>
     <hr />
-    <div>
-      Built by @chemsedd. Copyrights reserved - 2020.
+    <div class="text-dark text-opacity-75">
+      By Chems Eddine Senoussi - 2020.
     </div>
   </footer>
 </template>

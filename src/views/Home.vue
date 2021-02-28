@@ -3,22 +3,25 @@
     id="home"
     class="flex-1 grid grid-cols-1 gap-x-4 gap-y-10 w-10/12 sm:grid-cols-2 justify-center items-center min-h-screen"
   >
+    <!-- 
+      Title
+     -->
     <div
       data-aos="fade-right"
-      class="flex flex-col gap-y-3 justify-center items-center text-center"
+      class="flex flex-col gap-y-6 justify-center items-center text-center"
     >
-      <div class="md:text-8xl text-7xl text-white fira-code font-bold">
+      <div class="fira-code font-bold text-7xl md:text-8xl text-white">
         .hello!
       </div>
-      <h1 class="md:text-3xl text-2xl font-bold fira-code text-white">
+      <h1 class="fira-code font-bold text-2xl md:text-3xl text-white">
         <span class="font-thin">I am</span> Chems Eddine Senoussi
       </h1>
       <div
-        class="md:text-2xl text-lg fira-code font-thin text-white opacity-75"
+        class="fira-code font-extrabold text-xl text-redish-500 border-2 border-redish-500 border-dashed rounded-lg p-2"
       >
-        <span class="text-redish-500 font-bold">//</span>
-        <span class=" font-bold px-2">Web Developer</span> &
-        <span class="font-bold px-2">Graphic Designer</span>
+        <span class="">//</span>
+        <span class="text-white px-2">Software Engineer</span> &
+        <span class="text-white px-2">Graphic Designer</span>
       </div>
       <div
         class="inline-flex justify-center items-center w-full gap-x-3 text-white"
@@ -33,6 +36,9 @@
         </button>
       </div>
     </div>
+    <!-- 
+      Picture
+     -->
     <div data-aos="fade-left" class="flex flex-1 items-center justify-center">
       <img
         src="@/assets/me-b&w.jpg"

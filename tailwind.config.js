@@ -22,6 +22,7 @@ module.exports = {
   },
   variants: {
     fontSize: ["responsive"],
+    button: ["active"],
   },
   plugins: [],
 };

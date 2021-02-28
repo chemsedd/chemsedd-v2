@@ -5,33 +5,32 @@
   >
     <c-title>Contact Me</c-title>
     <div class="w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-8">
-      <div class="" data-aos="fade-right">
-        <div class="grid grid-cols-1 justify-between h-full">
-          <div class="contact-container">
-            <v-icon name="envelope-open-text" class="w-8 h-8" />
-            <span class="font-bold text-xl">chemsedd@outlook.fr</span>
-          </div>
-          <div class="contact-container">
-            <v-icon name="brands/google" class="w-8 h-8" />
-            <span class="font-bold text-xl">chemseddsen@gmail.com</span>
-          </div>
-          <div class="contact-container">
-            <v-icon name="brands/apple" class="w-8 h-8" />
-            <span class="font-bold text-xl">chemseddsen@icloud.com</span>
-          </div>
-          <div class="contact-container">
-            <v-icon name="mobile-alt" class="w-8 h-8" />
-            <span class="font-bold text-xl">(+213)699653291</span>
-          </div>
-          <div class="contact-container">
-            <v-icon name="brands/instagram" class="w-8 h-8" />
-            <span class="font-bold text-xl">@sun.art.tech</span>
-          </div>
+      <div data-aos="fade-right">
+        <div class="grid grid-cols-1 gap-y-2 justify-between h-full">
+          <span
+            class="w-8/12 flex justify-center items-center gap-x-4 rounded-lg border border-dashed border-redish-500 px-4 py-2"
+          >
+            <v-icon name="clipboard" class="text-white w-4 h-4" /> Click to copy
+            to clipboard.</span
+          >
+          <button
+            v-for="el in contact"
+            :key="el.value"
+            @click="copyIt(el.value)"
+            class="contact-container font-bold text-xl active:bg-red-400"
+          >
+            <v-icon :name="el.icon" class="w-8 h-8" />
+            <span>{{ el.value }}</span>
+          </button>
         </div>
       </div>
       <hr class="sm:hidden" />
       <div class="w-full" data-aos="fade-left">
-        <form action="#" class="grid grid-cols-1 gap-x-6 gap-y-6">
+        <form
+          action="https://formspree.io/f/mnqokpgq"
+          method="post"
+          class="grid grid-cols-1 gap-x-6 gap-y-6"
+        >
           <div>
             <label class="label" for="name">Name</label>
             <input
@@ -64,13 +63,13 @@
           <div class="flex gap-x-4">
             <button
               type="submit"
-              class="bg-redish-500 hover:bg-redish-700 font-bold h-10 w-1/2"
+              class="btn bg-redish-500 hover:bg-redish-700 font-bold h-10 w-1/2"
             >
               Send
             </button>
             <button
               type="reset"
-              class="border border-gray-200 hover:bg-white hover:bg-opacity-25 font-bold h-10 w-1/2"
+              class="btn border border-gray-200 hover:bg-white hover:bg-opacity-25 font-bold h-10 w-1/2"
             >
               Reset
             </button>
@@ -84,10 +83,22 @@
 <script>
 import CTitle from "../components/Title.vue";
 
+import mydata from "@/data/data.json";
+
 export default {
   name: "Contact",
   components: {
     CTitle,
+  },
+  data() {
+    return {
+      contact: mydata.contact,
+    };
+  },
+  methods: {
+    async copyIt(text) {
+      await navigator.clipboard.writeText(text);
+    },
   },
 };
 </script>
@@ -110,7 +121,7 @@ export default {
 }
 
 .input {
-  @apply text-dark font-semibold p-2 w-full bg-white;
+  @apply text-dark font-semibold py-2 px-4 w-full bg-white rounded-xl;
 }
 
 .input:hover {

@@ -28,5 +28,49 @@
       "pic": "sg-1",
       "desc": "Smart farming monitoring sytem with data analytics, it's the software part of a whole IoT system built with Raspberry Pi and Arduino to monitor and predict the growth of plants."
     }
+  },
+  "tools": {
+    "0": {
+      "logo": "python",
+      "name": "Python",
+      "desc": "I worked on Data Analytics projects, with Machine/Deep learning using Pandas, Numpy, Tensorflow..."
+    },
+    "1": {
+      "logo": "java",
+      "name": "Java",
+      "desc": "I created desktop apps using JavaFX: Spreadsheet reader, Multi Agents System (using JADE), and Medical Expert System."
+    },
+    "2": {
+      "logo": "c",
+      "name": "C",
+      "desc": "I programmed Data Structure manipulation, TCP/IP protocol using Sockets, Parallel programming with OMPI and OMP."
+    },
+    "3": {
+      "logo": "wordpress",
+      "name": "Wordpress",
+      "desc": "For freelancing, I use Wordpress to create website that meet the requirements of my clients."
+    }
+  },
+  "contact": {
+    "0": {
+      "icon": "envelope-open-text",
+      "value": "chemsedd@outlook.fr"
+    },
+    "1": {
+      "icon": "brands/google",
+      "value": "chemseddsen@gmail.com"
+    },
+    "2": {
+      "icon": "brands/apple",
+      "value": "chemseddsen@icloud.com"
+    },
+    "3": {
+      "icon": "mobile-alt",
+      "value": "(+213)699653291"
+    },
+    "4": {
+      "icon": "brands/instagram",
+      "value": "@sun.art.tech"
+    }
   }
 }
