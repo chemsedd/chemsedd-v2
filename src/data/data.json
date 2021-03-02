@@ -72,5 +72,53 @@
       "icon": "brands/instagram",
       "value": "@sun.art.tech"
     }
+  },
+  "timeline": {
+    "education": {
+      "0": {
+        "year": "October 2020",
+        "title": "Master’s degree in Artificial Intelligence - Computer Science",
+        "place": "University of Mohamed Khider, Biskra, Algeria",
+        "icon": "graduation-cap"
+      },
+      "1": {
+        "year": "October 2018",
+        "title": "Bachelor degree in Computer Science",
+        "place": "University of Mohamed Khider, Biskra, Algeria",
+        "icon": "university"
+      },
+      "2": {
+        "year": "October 2018",
+        "title": "Bachelazezaeor degree in Computer Science",
+        "place": "University of Mohamed Khider, Biskra, Algeria",
+        "icon": "university"
+      },
+      "3": {
+        "year": "October 2018",
+        "title": " degree in Computer Science",
+        "place": "University of Mohamed Khider, Biskra, Algeria",
+        "icon": "university"
+      }
+    },
+    "experience": {
+      "0": {
+        "year": "2020",
+        "title": "Frontend Developer at Dimalab",
+        "place": "University of Mohamed Khider, Biskra, Algeria",
+        "icon": "graduation-cap"
+      },
+      "1": {
+        "year": "2018 - 2020",
+        "title": "Biskra Computer Science Club",
+        "place": "University of Mohamed Khider, Biskra, Algeria",
+        "icon": "graduation-cap"
+      },
+      "2": {
+        "year": "2017 - present",
+        "title": "Graphic Designer",
+        "place": "",
+        "icon": "brush"
+      }
+    }
   }
 }

@@ -49,14 +49,14 @@ export default {
 </script>
 
 <style>
-@media screen and (min-width: 900px) {
+/* @media screen and (min-width: 900px) {
   html {
     scroll-snap-type: y proximity;
   }
   .section {
     scroll-snap-align: start;
   }
-}
+} */
 
 body {
   @apply bg-gray-900;
