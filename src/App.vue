@@ -7,6 +7,7 @@
       <Home class="section" />
       <About class="section" />
       <Fields class="section" />
+      <Timeline class="section" />
       <Skills class="section" />
       <DevWork class="section" />
       <DesignWork class="section" />
@@ -21,6 +22,7 @@ import NavBar from "./components/NavBar.vue";
 import Home from "./views/Home.vue";
 import About from "./views/About.vue";
 import Fields from "./views/Fields.vue";
+import Timeline from "./views/Timeline.vue";
 import Skills from "./views/Skills.vue";
 import DevWork from "./views/DevWork.vue";
 import DesignWork from "./views/DesignWork.vue";
@@ -33,6 +35,7 @@ export default {
     Home,
     About,
     Fields,
+    Timeline,
     Skills,
     DevWork,
     DesignWork,
@@ -77,11 +80,11 @@ body {
 }
 
 .btn:hover {
-  @apply shadow-outline;
+  @apply ring;
 }
 
 .btn:active {
-  @apply shadow-outline;
+  @apply ring;
 }
 
 .absolute-close {

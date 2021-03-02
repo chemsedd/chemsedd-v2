@@ -43,7 +43,7 @@ export default {
         "Web Development": {
           icon: "code",
           desc:
-            "I am interested in web development since my chidhood. Working on creating new powerfull web applications is a passion, with the latest technologies.",
+            "I'm working in web development as a freelancer. Mainly, I do Front-end, but I'm also enhancing my Back-end skills to be a Full-stack developer in the future.",
         },
         "Artificial Intelligence": {
           icon: "robot",
@@ -53,12 +53,12 @@ export default {
         "Desktop Development": {
           icon: "laptop-code",
           desc:
-            "I also work on developing desktop apps (mostly on windows), I use different technologies depanding on the type of app.",
+            "I also work on developing desktop apps (mostly on windows), I use different technologies depending on the type of the app.",
         },
         "Graphic Design": {
           icon: "crop",
           desc:
-            "I worked on many projects with different agencies and associations as a designer. I was responsable for creating the virtual indentity and all printables (documents, roll-up and posters).",
+            "I worked on many projects with different agencies and associations as a designer. I was responsible for creating the virtual indentity and all printables (documents, roll-up and posters).",
         },
       },
     };

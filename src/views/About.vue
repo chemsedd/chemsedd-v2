@@ -115,6 +115,6 @@ export default {
 }
 
 .page-up:hover {
-  @apply bg-redish-700 shadow-outline;
+  @apply bg-redish-700 ring;
 }
 </style>

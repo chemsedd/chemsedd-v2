@@ -3,3 +3,18 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer components {
+
+    .tl-image {
+        @apply w-24 h-24 object-cover rounded-full shadow-lg mb-2 sm:absolute md:mx-auto md:left-0 md:right-0;
+    }
+
+    .tl-card {
+        @apply relative pt-2 sm:pt-0 sm:pl-32 md:w-1/2 md:ml-auto md:pl-16;
+    }
+
+    .tl-pointer {
+        @apply w-4 h-4 transform rotate-45 absolute inset-0 left-10 sm:top-11 sm:left-29 md:left-14 bg-white;
+    }
+}

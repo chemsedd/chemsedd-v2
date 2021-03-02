@@ -40,7 +40,7 @@
             <img
               :src="logo"
               :alt="logo"
-              class="w-full hover:shadow-outline hover:cursor-pointer rounded-lg"
+              class="w-full hover:ring hover:cursor-pointer rounded-lg"
             />
           </button>
         </div>

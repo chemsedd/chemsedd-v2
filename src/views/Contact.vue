@@ -125,10 +125,10 @@ export default {
 }
 
 .input:hover {
-  @apply shadow-outline;
+  @apply ring;
 }
 
 .input:focus {
-  @apply outline-none shadow-outline;
+  @apply outline-none ring;
 }
 </style>

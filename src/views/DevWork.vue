@@ -49,7 +49,7 @@
             desc: app.desc,
           })
         "
-        class="flex items-center flex-1 justify-center hover:shadow-outline rounded-xl"
+        class="flex items-center flex-1 justify-center hover:ring rounded-xl"
         :class="['p-5 rounded-xl shadow-xl', 'bg-' + app.bg, 'bg-opacity-75']"
       >
         <!-- Apps galery picture -->
