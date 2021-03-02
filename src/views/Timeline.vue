@@ -1,7 +1,7 @@
 <template>
   <div
     id="fields"
-    class="min-h-screen w-full flex flex-col gap-y-16 items-center my-10 sm:my-0"
+    class="min-h-screen w-full flex flex-col gap-y-16 items-center my-8 sm:my-10 lg:my-4"
   >
     <c-title animated="fade-up" id="Fields">My timeline</c-title>
     <div class="w-10/12 relative container mx-auto px-4 flex flex-col gap-5">

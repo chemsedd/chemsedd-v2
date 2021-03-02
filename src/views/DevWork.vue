@@ -1,7 +1,7 @@
 <template>
   <div
     id="dev-work"
-    class="min-h-screen w-full flex flex-col gap-y-16 items-center justify-center text-white my-10 sm:my-0"
+    class="min-h-screen w-full flex flex-col gap-y-16 items-center justify-center text-white"
   >
     <c-title>As a Developer</c-title>
     <!-- Modal -->

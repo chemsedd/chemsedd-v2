@@ -1,7 +1,7 @@
 <template>
   <div
     id="skills"
-    class="min-h-screen w-full flex flex-col gap-y-12 items-center justify-center text-white my-10 sm:my-0"
+    class="min-h-screen w-full flex flex-col gap-y-12 items-center justify-center text-white my-8 sm:mt-5 sm:mb-0 lg:my-4"
   >
     <c-title animated="fade-up">My Skills</c-title>
     <div

@@ -1,14 +1,16 @@
 <template>
   <div
     id="contact"
-    class="min-h-screen w-full flex flex-col gap-y-16 items-center justify-center text-white my-10 sm:my-0"
+    class="min-h-screen w-full flex flex-col gap-y-16 items-center justify-center text-white my-8 sm:my-10 lg:my-0"
   >
     <c-title>Contact Me</c-title>
-    <div class="w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-8">
+    <div class="w-2/3 grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-8 py-4">
       <div data-aos="fade-right">
-        <div class="grid grid-cols-1 gap-y-2 justify-between h-full">
+        <div
+          class="grid grid-cols-1 gap-y-2 text-center justify-between h-full"
+        >
           <span
-            class="w-8/12 flex justify-center items-center gap-x-4 rounded-lg border border-dashed border-redish-500 px-4 py-2"
+            class="w-full flex justify-center items-center gap-x-4 rounded-lg border border-dashed border-redish-500 px-4 py-2"
           >
             <v-icon name="clipboard" class="text-white w-4 h-4" /> Click to copy
             to clipboard.</span
@@ -24,7 +26,6 @@
           </button>
         </div>
       </div>
-      <hr class="sm:hidden" />
       <div class="w-full" data-aos="fade-left">
         <form
           action="https://formspree.io/f/mnqokpgq"

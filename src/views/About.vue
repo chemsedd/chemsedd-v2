@@ -1,7 +1,7 @@
 <template>
   <div
     id="about"
-    class="min-h-screen flex flex-col items-center justify-center my-10 sm:my-0 w-full gap-y-10"
+    class="min-h-screen flex flex-col items-center justify-center w-full gap-y-10 my-8 sm:my-10 lg:my-0"
   >
     <c-title animate="">About Me</c-title>
     <!-- data-aos="fade-up" -->
@@ -32,7 +32,7 @@
           </div>
         </div>
         <!-- Infos about me -->
-        <dl class="bio-list lg:col-span-1">
+        <dl class="bio-list md:col-span-1">
           <dt>
             <v-icon class="listed-icon" name="birthday-cake" />
           </dt>
@@ -63,9 +63,9 @@
           </dd>
         </dl>
       </div>
-      <a href="#app" class="page-up" data-aos="fade-up">
+      <!-- <a href="#app" class="page-up" data-aos="fade-up">
         <v-icon name="caret-up" class="w-6 h-6" />
-      </a>
+      </a> -->
     </div>
   </div>
 </template>

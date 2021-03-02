@@ -1,7 +1,7 @@
 <template>
   <div
     id="home"
-    class="flex-1 grid grid-cols-1 gap-x-4 gap-y-10 w-10/12 sm:grid-cols-2 justify-center items-center min-h-screen"
+    class="flex-1 grid grid-cols-1 gap-x-4 gap-y-10 w-10/12 lg:grid-cols-2 justify-center items-center min-h-screen my-8 sm:my-10 lg:my-0"
   >
     <!-- 
       Title
@@ -10,7 +10,9 @@
       data-aos="fade-right"
       class="flex flex-col gap-y-6 justify-center items-center text-center"
     >
-      <div class="fira-code font-bold text-7xl md:text-8xl text-white">
+      <div
+        class="fira-code font-bold text-6xl sm:text-7xl md:text-8xl text-white"
+      >
         .hello!
       </div>
       <h1 class="fira-code font-bold text-2xl md:text-3xl text-white">
